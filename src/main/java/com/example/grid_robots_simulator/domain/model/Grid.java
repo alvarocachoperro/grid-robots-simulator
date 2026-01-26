@@ -1,12 +1,7 @@
 package com.example.grid_robots_simulator.domain.model;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
+
 import java.util.Objects;
 import java.util.Set;
-import java.util.stream.Collectors;
-import java.util.stream.IntStream;
-import java.util.stream.Stream;
 
 public class Grid {
     private int sizeX;
