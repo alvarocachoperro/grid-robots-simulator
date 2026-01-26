@@ -5,7 +5,6 @@ import lombok.Getter;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.concurrent.atomic.AtomicBoolean;
 
 @Getter
 public class Robot {
@@ -13,7 +12,7 @@ public class Robot {
     private Direction direction;
     private int num;
     private final Grid grid;
-    private String commands;
+    private final String commands;
     private final List<RobotState> history = new ArrayList<>();
     
     public Robot(int numero, String moves, Position initialPos, Direction initialDir, Grid grid) {
@@ -58,14 +57,11 @@ public class Robot {
         Position newPosition = position.move(direction);
         Position oldPosition = position;
         if (grid.isValidMove(newPosition)) {
-            AtomicBoolean found = new AtomicBoolean(false);
-            this.grid.getObstacles().forEach(obstacle -> {
-                if (obstacle.x()==oldPosition.x() && obstacle.y()==oldPosition.y()){
-                 found.set(true);
-                }});
-            if (found.get()) {
-                this.grid.getObstacles().remove(oldPosition);
-                this.grid.getObstacles().add(newPosition);
+            boolean removed = grid.getObstacles()
+                    .removeIf(o -> o.x() == oldPosition.x() && o.y() == oldPosition.y());
+
+            if (removed) {
+                grid.getObstacles().add(newPosition);
             }
             position = newPosition;
         }
