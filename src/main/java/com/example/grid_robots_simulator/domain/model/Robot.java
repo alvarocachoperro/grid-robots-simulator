@@ -10,13 +10,11 @@ import java.util.List;
 public class Robot {
     private Position position;
     private Direction direction;
-    private int num;
     private final Grid grid;
     private final String commands;
     private final List<RobotState> history = new ArrayList<>();
     
-    public Robot(int numero, String moves, Position initialPos, Direction initialDir, Grid grid) {
-        this.num = numero;
+    public Robot(String moves, Position initialPos, Direction initialDir, Grid grid) {
         this.commands = moves;
         this.position = initialPos;
         this.direction = initialDir;

@@ -40,7 +40,7 @@ public class RobotGameService {
             int y = Integer.parseInt(posParts[1]);
             Direction dir = Direction.parse(posParts[2]);
 
-            robots.add(new Robot(i,lines[i + 1].trim(),new Position(x, y), dir, grid));
+            robots.add(new Robot(lines[i + 1].trim(),new Position(x, y), dir, grid));
         }
         if (!robots.isEmpty()) {
             grid.setObstacles(robots.stream().map(Robot::getPosition).collect(Collectors.toSet()));
