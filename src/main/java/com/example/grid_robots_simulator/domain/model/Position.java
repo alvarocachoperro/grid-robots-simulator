@@ -13,6 +13,6 @@ public record Position(int x, int y) {
     }
     
     public boolean isValid(int posX, int posY) {
-        return x >= 0 && x < posX && y >= 0 && y < posY;
+        return x >= 0 && x <= posX && y >= 0 && y <= posY;
     }
 }
