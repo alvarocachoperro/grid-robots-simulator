@@ -1,0 +1,30 @@
+openapi: 3.0.3
+info:
+  title: Robot Simulator API
+  description: API para simular movimientos de robots en un grid de forma secuencial.
+  version: 0.0.1
+servers:
+  - url: http://localhost:8080
+    description: Servidor local
+paths:
+  /api/robots:
+    post:
+      tags:
+        - Robot Simulator
+      summary: Simula el movimiento de múltiples robots
+      description: Acepta un texto con las dimensiones del grid, seguidas de la posición inicial y comandos para cada robot.
+      requestBody:
+        required: true
+        content:
+          text/plain:
+            schema:
+              type: string
+              example: "5 5\n1 2 N\nLMLMLMLMM\n3 3 E\nMMRMMRMRRM"
+      responses:
+        '200':
+          description: Posiciones finales de los robots
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: "1 3 N\n5 1 E"

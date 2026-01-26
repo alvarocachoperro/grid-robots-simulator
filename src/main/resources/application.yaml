@@ -1,3 +1,9 @@
 spring:
   application:
     name: grid-robots-simulator
+
+springdoc:
+  swagger-ui:
+    url: /robotsapi.yaml
+  api-docs:
+    enabled: false
