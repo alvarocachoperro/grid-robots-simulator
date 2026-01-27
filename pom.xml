@@ -87,8 +87,8 @@
 						<configuration>
 							<inputSpec>${project.basedir}/src/main/resources/static/robotsapi.yaml</inputSpec>
 							<generatorName>spring</generatorName>
-							<apiPackage>com.example.grid_robots_simulator.infraestructure.rest.api</apiPackage>
-							<modelPackage>com.example.grid_robots_simulator.infraestructure.rest.model</modelPackage>
+							<apiPackage>com.example.grid_robots_simulator.infrastructure.rest.api</apiPackage>
+							<modelPackage>com.example.grid_robots_simulator.infrastructure.rest.model</modelPackage>
 							<modelNameSuffix>DTO</modelNameSuffix>
 							<configOptions>
 								<interfaceOnly>true</interfaceOnly>

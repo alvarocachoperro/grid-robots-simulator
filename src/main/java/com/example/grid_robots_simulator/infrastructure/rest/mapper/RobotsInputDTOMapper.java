@@ -1,9 +1,9 @@
-package com.example.grid_robots_simulator.infraestructure.rest.mapper;
+package com.example.grid_robots_simulator.infrastructure.rest.mapper;
 
-import com.example.grid_robots_simulator.infraestructure.rest.model.GridDTO;
-import com.example.grid_robots_simulator.infraestructure.rest.model.PositionDTO;
-import com.example.grid_robots_simulator.infraestructure.rest.model.RobotDTO;
-import com.example.grid_robots_simulator.infraestructure.rest.model.RobotsInputDTO;
+import com.example.grid_robots_simulator.infrastructure.rest.model.GridDTO;
+import com.example.grid_robots_simulator.infrastructure.rest.model.PositionDTO;
+import com.example.grid_robots_simulator.infrastructure.rest.model.RobotDTO;
+import com.example.grid_robots_simulator.infrastructure.rest.model.RobotsInputDTO;
 
 import java.util.ArrayList;
 import java.util.List;

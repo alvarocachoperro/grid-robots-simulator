@@ -1,4 +1,4 @@
-package com.example.grid_robots_simulator.infraestructure.rest.controller;
+package com.example.grid_robots_simulator.infrastructure.rest.controller;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;

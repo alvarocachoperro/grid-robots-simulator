@@ -1,7 +1,7 @@
-package com.example.grid_robots_simulator.infraestructure.rest.mapper;
+package com.example.grid_robots_simulator.infrastructure.rest.mapper;
 
 import com.example.grid_robots_simulator.domain.model.Grid;
-import com.example.grid_robots_simulator.infraestructure.rest.model.GridDTO;
+import com.example.grid_robots_simulator.infrastructure.rest.model.GridDTO;
 
 import java.util.Set;
 

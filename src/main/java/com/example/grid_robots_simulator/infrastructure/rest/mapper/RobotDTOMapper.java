@@ -1,10 +1,10 @@
-package com.example.grid_robots_simulator.infraestructure.rest.mapper;
+package com.example.grid_robots_simulator.infrastructure.rest.mapper;
 
 import com.example.grid_robots_simulator.domain.model.Grid;
 import com.example.grid_robots_simulator.domain.model.Position;
 import com.example.grid_robots_simulator.domain.model.Robot;
 import com.example.grid_robots_simulator.domain.model.enums.Direction;
-import com.example.grid_robots_simulator.infraestructure.rest.model.RobotDTO;
+import com.example.grid_robots_simulator.infrastructure.rest.model.RobotDTO;
 
 public class RobotDTOMapper {
 
@@ -23,5 +23,6 @@ public class RobotDTOMapper {
                 .grid(grid)
                 .build();
     }
+
 
 }
