@@ -1,20 +1,24 @@
 package com.example.grid_robots_simulator.domain.model;
 
 import com.example.grid_robots_simulator.domain.model.enums.Direction;
+import lombok.Builder;
 import lombok.Getter;
+import lombok.Setter;
 
 import java.util.ArrayList;
 import java.util.List;
 
 @Getter
+@Setter
+@Builder
 public class Robot {
     private Position position;
     private Direction direction;
-    private final Grid grid;
+    private Grid grid;
     private final String commands;
     private final List<RobotState> history = new ArrayList<>();
     
-    public Robot(String moves, Position initialPos, Direction initialDir, Grid grid) {
+    public Robot( Position initialPos, Direction initialDir, Grid grid, String moves) {
         this.commands = moves;
         this.position = initialPos;
         this.direction = initialDir;
