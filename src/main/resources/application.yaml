@@ -4,6 +4,8 @@ spring:
 
 springdoc:
   swagger-ui:
-    url: /robotsapi.yaml
+    operationsSorter: alpha
+    tagsSorter: alpha
+    displayRequestDuration: true
   api-docs:
-    enabled: false
+    enabled: true
