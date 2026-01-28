@@ -64,6 +64,7 @@ As this project does not **persist any data**, no specific database implementati
 
 Finally, although the project follows a **Test-Driven Development (TDD)** approach, a **Cucumber (BDD)** test has also been added to showcase familiarity and experience with behavior-driven testing methodologies.
 
+**Additional Note:** Although the domain model initially doesn't include robot movement history, I've added it to facilitate debugging and tracing each robot's movements when needed.
 
 ### Technologies
 The project is built using the following technologies:
